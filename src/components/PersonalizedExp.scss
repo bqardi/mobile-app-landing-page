@@ -1,17 +1,17 @@
 @import "../variables";
 
-.PersonalizedExp{
-	&__container{
+.PersonalizedExp {
+	&__container {
 		max-width: 100%;
 	}
-	&__content{
+	&__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		height: clamp(300px, 35vw, 500px);
 	}
-	&__links{
+	&__links {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -20,11 +20,11 @@
 		height: 120px;
 		margin-top: 2em;
 	}
-	&__backimage{
+	&__backimage {
 		display: none;
 	}
 	@media only screen and (min-width: 376px) {
-		&__links{
+		&__links {
 			flex-direction: row;
 			justify-content: space-between;
 			max-width: 315px;
@@ -32,19 +32,19 @@
 		}
 	}
 	@media only screen and (min-width: $gridBreakpoint) {
-		&{
+		& {
 			background-image: url("../images/personalized-football-experience.png");
 			background-repeat: no-repeat;
 			background-position: 100%;
 			background-size: contain;
 		}
-		&__content{
+		&__content {
 			align-items: flex-start;
 		}
-		&__backimage{
+		&__backimage {
 			display: inline-block;
 		}
-		&__container{
+		&__container {
 			max-width: min(1000px, 60%);
 		}
 	}

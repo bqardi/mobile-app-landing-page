@@ -1,10 +1,10 @@
-.Features{
+.Features {
 	padding: 2em 2em 4em;
 	text-align: center;
-	&__title{
+	&__title {
 		margin-bottom: 1em;
 	}
-	&__grid{
+	&__grid {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 4em;
@@ -12,14 +12,14 @@
 		margin: 0 auto;
 	}
 	@media only screen and (min-width: 768px) {
-		&{
+		& {
 			background-image: url(../images/blue-back.svg);
 			background-size: cover;
 		}
-		&__title{
+		&__title {
 			color: white;
 		}
-		&__grid{
+		&__grid {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 		}

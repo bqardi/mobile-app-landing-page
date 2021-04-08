@@ -3,7 +3,7 @@ import "./Interface.scss";
 import Grid from "./Grid";
 // import BackImage from "./BackImage";
 
-function Interface(){
+function Interface() {
 	return (
 		<div className="Interface">
 			<Grid className="Interface__grid">
@@ -11,10 +11,14 @@ function Interface(){
 					<Article.Title level="3">Get started</Article.Title>
 					<Article.Title>User-friendly Interface</Article.Title>
 					<Article.Text>
-						The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription.
+						The in-game goal clips from every Premier League match are available
+						to Guardian TV customers with a Guardian subscription.
 					</Article.Text>
 					<Article.Text>
-						So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD.
+						So, if you’re not a subscriber, now’s the time to make that savvy
+						call. If that’s a step too far for you, you can still watch loads of
+						firecracker Premier League action as long as you sign in with a free
+						Guardian iD.
 					</Article.Text>
 					<Article.Link to="/interface">Learn more</Article.Link>
 				</Article>

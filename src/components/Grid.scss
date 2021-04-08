@@ -1,15 +1,15 @@
 @import "../variables";
 
-.Grid{
+.Grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
 	height: 100%;
-	&--end{
+	&--end {
 		justify-items: end;
 	}
 	@media only screen and (min-width: $gridBreakpoint) {
-		&{
+		& {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}

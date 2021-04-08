@@ -1,18 +1,18 @@
-.FeaturedIn{
+.FeaturedIn {
 	padding: 2em;
-	&__title{
+	&__title {
 		text-align: center;
 	}
-	&__logos{
+	&__logos {
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		max-width: 1300px;
 		margin: 0 auto;
-		& img{
+		& img {
 			margin-right: 2em;
 			margin-bottom: 2em;
-			&:last-of-type{
+			&:last-of-type {
 				margin-right: 0;
 			}
 		}

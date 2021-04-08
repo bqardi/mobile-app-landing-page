@@ -1,14 +1,14 @@
 @import "../variables";
 
-.TeamSupport{
-	&__content{
+.TeamSupport {
+	&__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 2em;
 	}
-	&__links{
+	&__links {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -17,14 +17,14 @@
 		height: 120px;
 		margin-top: 1.5em;
 	}
-	&__backimage{
+	&__backimage {
 		max-width: unset;
-		& img{
+		& img {
 			height: unset;
 		}
 	}
 	@media only screen and (min-width: 376px) {
-		&__links{
+		&__links {
 			flex-direction: row;
 			justify-content: space-between;
 			max-width: 315px;
@@ -32,7 +32,7 @@
 		}
 	}
 	@media only screen and (min-width: $gridBreakpoint) {
-		&__content{
+		&__content {
 			align-items: flex-start;
 		}
 	}

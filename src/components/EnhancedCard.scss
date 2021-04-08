@@ -1,4 +1,4 @@
-.EnhancedCard{
+.EnhancedCard {
 	position: relative;
 	background-color: white;
 	min-width: 270px;
@@ -6,16 +6,16 @@
 	box-shadow: -8px 8px 20px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 3px;
 	overflow: hidden;
-	&__body{
+	&__body {
 		padding: 1.4em 0.8em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	&--active &__footer{
+	&--active &__footer {
 		background-color: rgba(0, 128, 0, 0.2);
 	}
-	&__footer{
+	&__footer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -25,15 +25,15 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	&--active &__switchHandle{
+	&--active &__switchHandle {
 		left: 11px;
 	}
-	&__switch{
+	&__switch {
 		position: relative;
 		$handleSize: 13px;
 		padding: $handleSize / 4;
 		cursor: pointer;
-		&Handle{
+		&Handle {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -42,9 +42,9 @@
 			width: $handleSize;
 			height: $handleSize;
 			box-shadow: -0.5px 1.5px 2px 0 rgba(0, 0, 0, 0.5);
-			transition: left .15s;
+			transition: left 0.15s;
 		}
-		&Background{
+		&Background {
 			background-color: gray;
 			height: $handleSize * 0.6;
 			width: $handleSize * 1.3;

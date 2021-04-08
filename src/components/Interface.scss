@@ -1,31 +1,31 @@
 @import "../variables";
 
-.Interface{
+.Interface {
 	background-image: url("../images/phone-with-background.png");
 	background-size: contain;
 	background-position: 100%;
 	background-repeat: no-repeat;
 	height: 500px;
 	@media only screen and (max-width: 820px) {
-		&{
+		& {
 			$leftPos: 75vw;
 			height: calc(280px + 100vw);
 			background-position: 50% 100%;
 			padding-left: $leftPos;
 			margin-left: -$leftPos;
 		}
-		&__grid{
+		&__grid {
 			align-items: start;
 		}
 	}
-	&__icons{
+	&__icons {
 		position: relative;
 		width: 300px;
 		height: 300px;
 		margin-left: 10px;
 		margin-bottom: 20px;
 	}
-	&__icon{
+	&__icon {
 		position: relative;
 		width: 64px;
 		height: 64px;
@@ -35,17 +35,17 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		& svg{
+		& svg {
 			width: 40px;
 			display: block;
 		}
-		&--bottom{
+		&--bottom {
 			position: absolute;
 			right: 0;
 			bottom: 0;
 		}
 	}
-	&__count{
+	&__count {
 		position: absolute;
 		top: 12px;
 		right: 8px;
@@ -59,7 +59,7 @@
 		align-items: center;
 		font-size: 0.9em;
 	}
-	&__dot{
+	&__dot {
 		position: absolute;
 		bottom: 0;
 		left: -86px;
@@ -71,7 +71,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		&Inner{
+		&Inner {
 			width: 12px;
 			height: 12px;
 			background-color: $brandColor;

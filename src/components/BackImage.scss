@@ -1,9 +1,9 @@
 @import "../variables";
 
-.BackImage{
+.BackImage {
 	position: relative;
 	display: inline-block;
-	&--fade::before{
+	&--fade::before {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -12,14 +12,14 @@
 		bottom: 0;
 		background-image: linear-gradient(to top, transparent, white);
 	}
-	&__image{
+	&__image {
 		display: block;
 		width: 100%;
 		max-width: 100%;
 		height: clamp(400px, 50vw, 600px);
 		object-fit: cover;
 	}
-	&__content{
+	&__content {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -30,13 +30,13 @@
 		align-items: center;
 	}
 	@media only screen and (min-width: $gridBreakpoint) {
-		&{
+		& {
 			max-width: 600px;
 		}
-		&::before{
+		&::before {
 			background-image: linear-gradient(to right, transparent, white);
 		}
-		&__image{
+		&__image {
 			width: unset;
 		}
 	}

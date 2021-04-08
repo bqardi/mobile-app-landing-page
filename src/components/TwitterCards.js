@@ -1,15 +1,15 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import TwitterCard from "./TwitterCard";
-import Carousel from "react-grid-carousel"
+import Carousel from "react-grid-carousel";
 import "./TwitterCards.scss";
 
-function TwitterCards(){
+function TwitterCards() {
 	var [data, setData] = useState([]);
-	
+
 	useEffect(() => {
 		axios.get("/api/data.json").then(response => {
-			setData(response.data.twitter)
+			setData(response.data.twitter);
 		});
 	}, []);
 
@@ -42,13 +42,13 @@ function TwitterCards(){
 					paddingBottom: "0.5em"
 				}}
 			>
-				{data?.map(item =>
+				{data?.map(item => (
 					<Carousel.Item key={item.id}>
 						<TwitterCard avatar={item.avatar} name={item.name}>
 							{item.comment}
 						</TwitterCard>
 					</Carousel.Item>
-				)}
+				))}
 			</Carousel>
 		</section>
 	);

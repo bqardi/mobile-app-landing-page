@@ -4,7 +4,7 @@ import EnhancedCard from "./EnhancedCard";
 import "./EnhancedExp.scss";
 import Grid from "./Grid";
 
-function EnhancedExp(){
+function EnhancedExp() {
 	return (
 		<div className="EnhancedExp">
 			<Grid>
@@ -12,10 +12,13 @@ function EnhancedExp(){
 					<Article.Title level="3">What it does</Article.Title>
 					<Article.Title>An Enhanced Football Experience</Article.Title>
 					<Article.Text>
-						The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get in there, what a result!
+						The Guardian Live Scores app is your go to app for live scores and
+						watching Premier League goals… Get in there, what a result!
 					</Article.Text>
 					<Article.Text>
-						As well as videos of all the goals, you can watch match highlights, check out the latest scores and results and stay bang-up-to-date with the big football stories from The Guardian publication.
+						As well as videos of all the goals, you can watch match highlights,
+						check out the latest scores and results and stay bang-up-to-date
+						with the big football stories from The Guardian publication.
 					</Article.Text>
 					<Article.Link to="/enhanced">Learn more</Article.Link>
 				</Article>
@@ -34,8 +37,16 @@ function EnhancedExp(){
 										<p className="EnhancedExp__cardType">Friendly Match</p>
 									</div>
 									<div className="EnhancedExp__cardLogos">
-										<img className="EnhancedExp__cardLogosArsenal" src="/images/arsenal-fc.svg" alt="Arsenal logo"/>
-										<img className="EnhancedExp__cardLogosChelsea" src="/images/chelsea-fc.svg" alt="Chelsea logo"/>
+										<img
+											className="EnhancedExp__cardLogosArsenal"
+											src="/images/arsenal-fc.svg"
+											alt="Arsenal logo"
+										/>
+										<img
+											className="EnhancedExp__cardLogosChelsea"
+											src="/images/chelsea-fc.svg"
+											alt="Chelsea logo"
+										/>
 									</div>
 								</EnhancedCard.Body>
 								<EnhancedCard.Footer>
@@ -45,11 +56,12 @@ function EnhancedExp(){
 							</EnhancedCard>
 						</div>
 						<div className="EnhancedExp__cardsBack">
-							<EnhancedCard style={{
-								backgroundImage: "url('/images/video.jpg')",
-								backgroundSize: "cover"
-							}}>
-							</EnhancedCard>
+							<EnhancedCard
+								style={{
+									backgroundImage: "url('/images/video.jpg')",
+									backgroundSize: "cover"
+								}}
+							></EnhancedCard>
 						</div>
 					</div>
 				</BackImage>

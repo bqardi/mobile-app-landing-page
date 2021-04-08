@@ -1,10 +1,10 @@
 @import "../variables";
 
-.EnhancedExp{
-	&__background{
+.EnhancedExp {
+	&__background {
 		position: relative;
 		display: inline-block;
-		&::before{
+		&::before {
 			content: "";
 			position: absolute;
 			top: 0;
@@ -14,7 +14,7 @@
 			background-image: linear-gradient(to top, transparent, white);
 		}
 	}
-	&__image{
+	&__image {
 		display: block;
 		width: 100%;
 		max-width: 100%;
@@ -22,7 +22,7 @@
 		max-height: 500px;
 		object-fit: cover;
 	}
-	&__content{
+	&__content {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -32,60 +32,60 @@
 		justify-content: center;
 		align-items: center;
 	}
-	&__cards{
+	&__cards {
 		position: relative;
 		width: 90%;
 		max-width: 335px;
 		height: 300px;
-		&Front{
+		&Front {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 1;
 		}
-		&Back{
+		&Back {
 			position: absolute;
 			bottom: 0;
 			right: 0;
 		}
 	}
-	&__card{
-		&Content{
+	&__card {
+		&Content {
 			max-width: 100px;
 		}
-		&Logos{
+		&Logos {
 			$imgHeight: 56px;
 			position: relative;
 			width: $imgHeight * 1.68;
-			& img{
+			& img {
 				height: $imgHeight;
 			}
-			&Chelsea{
+			&Chelsea {
 				position: absolute;
 				right: 0;
 			}
 		}
-		&Time{
+		&Time {
 			margin: 0;
 		}
-		&Versus{
+		&Versus {
 			color: $blackColor;
 			margin: 0.8em 0;
 		}
-		&Type{
+		&Type {
 			color: $blackColor;
 			font-size: 0.9em;
 			margin: 0;
 		}
 	}
 	@media only screen and (min-width: $gridBreakpoint) {
-		&__image{
+		&__image {
 			width: unset;
 		}
-		&__background{
+		&__background {
 			max-width: 600px;
 		}
-		&__background::before{
+		&__background::before {
 			background-image: linear-gradient(to right, transparent, white);
 		}
 	}

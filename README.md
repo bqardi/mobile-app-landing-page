@@ -6,9 +6,9 @@ I denne opgave skal du sætte en præsentationsside op for en mobil applikation.
 
 Formålet med opgaven er at få øvelse i
 
-* Opsætning af et React projekt
-* Opsætning af tests
-* Kodning af design med HTML (JSX) og CSS (SASS/SCSS)
+- Opsætning af et React projekt
+- Opsætning af tests
+- Kodning af design med HTML (JSX) og CSS (SASS/SCSS)
 
 ## Krav
 
@@ -21,13 +21,13 @@ Du skal sætte en automatiseret test op for komponentet, der viser Twitter-bruge
 
 Test følgende:
 
-* Twitter-kortet indeholder det korrekte billede.
-* Twitter-kortet indeholder den korrekte tekst.
-* Twitter-kortet indeholder det korrekte navn.
+- Twitter-kortet indeholder det korrekte billede.
+- Twitter-kortet indeholder den korrekte tekst.
+- Twitter-kortet indeholder det korrekte navn.
 
 Sæt din test op med en mock af APIet (som i virkeligheden "bare" er en JSON-fil)
 
-___*Du skal have godkendt din test af din lærer før du går i gang med at kode selve projektet.*___ Det betyder, at din tilgang her er Test Driven Design (TDD).
+**_*Du skal have godkendt din test af din lærer før du går i gang med at kode selve projektet.*_** Det betyder, at din tilgang her er Test Driven Design (TDD).
 
 ### Resten
 
@@ -35,11 +35,11 @@ Resten af siden skal kodes responsivt i forhold til de to design i figma filen.
 
 ## Tech Stack
 
-* React
-* SASS
-* Prettier / ESLint
-* Axios
-* react-grid-carousel (https://www.npmjs.com/package/react-grid-carousel)
+- React
+- SASS
+- Prettier / ESLint
+- Axios
+- react-grid-carousel (https://www.npmjs.com/package/react-grid-carousel)
 
 ## Deployment
 
