@@ -1,0 +1,41 @@
+@import "../variables";
+
+.Article{
+	padding: 1em;
+	text-align: center;
+	max-width: 380px;
+	margin: 0 auto;
+	&__title{
+		&--level-1{
+			font-size: 2.1em;
+		}
+		&--level-2{
+			font-size: 1.8em;
+		}
+		&--level-3{
+			font-size: 1.1em;
+			color: $brandColor;
+			text-transform: uppercase;
+		}
+	}
+	&__text{
+		line-height: 1.45rem;
+		margin: min(1vw, 2em) 0;
+	}
+	&__link{
+		text-decoration: none;
+		color: $brandColor;
+		font-weight: 700;
+	}
+	@media only screen and (min-width: $gridBreakpoint) {
+		&{
+			text-align: left;
+		}
+		&--reverse{
+			order: 1;
+		}
+		&__title{
+			margin-bottom: min(1vw, 2em);
+		}
+	}
+}

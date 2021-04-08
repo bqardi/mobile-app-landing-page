@@ -1,0 +1,43 @@
+@import "../variables";
+
+.BackImage{
+	position: relative;
+	display: inline-block;
+	&--fade::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: linear-gradient(to top, transparent, white);
+	}
+	&__image{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: clamp(400px, 50vw, 600px);
+		object-fit: cover;
+	}
+	&__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	@media only screen and (min-width: $gridBreakpoint) {
+		&{
+			max-width: 600px;
+		}
+		&::before{
+			background-image: linear-gradient(to right, transparent, white);
+		}
+		&__image{
+			width: unset;
+		}
+	}
+}

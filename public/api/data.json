@@ -1,0 +1,40 @@
+{
+	"twitter": [
+		{
+			"id": "0",
+			"avatar": "/api/images/sarah_udoma.png",
+			"name": "Sarah Udoma",
+			"comment": "I use this app all the time and it's doing a great job of keeping me up to date with what's going on in the soccer-world."
+		},{
+			"id": "1",
+			"avatar": "/api/images/noah_jackson.png",
+			"name": "Noah Jackson",
+			"comment": "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor"
+		},{
+			"id": "2",
+			"avatar": "/api/images/no_avatar.png",
+			"name": "Darren Wilson",
+			"comment": "Good for scores and commentary but the team lineups have stopped working. "
+		},{
+			"id": "3",
+			"avatar": "/api/images/michael_akinuli.png",
+			"name": "Michael Akinuli",
+			"comment": "Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go"
+		},{
+			"id": "4",
+			"avatar": "/api/images/christiano_ronaldo.png",
+			"name": "Christiano Ronaldo",
+			"comment": "Mumble, mumble, mumble!"
+		},{
+			"id": "5",
+			"avatar": "/api/images/lionel_messi.png",
+			"name": "Lionel Messi",
+			"comment": "I think this is the best app in the world... Even better than my soccer career..."
+		},{
+			"id": "6",
+			"avatar": "/api/images/pele.png",
+			"name": "Pelé",
+			"comment": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do."
+		}
+	]
+}

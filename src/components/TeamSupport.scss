@@ -1,0 +1,39 @@
+@import "../variables";
+
+.TeamSupport{
+	&__content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2em;
+	}
+	&__links{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 120px;
+		margin-top: 1.5em;
+	}
+	&__backimage{
+		max-width: unset;
+		& img{
+			height: unset;
+		}
+	}
+	@media only screen and (min-width: 376px) {
+		&__links{
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: 315px;
+			height: unset;
+		}
+	}
+	@media only screen and (min-width: $gridBreakpoint) {
+		&__content{
+			align-items: flex-start;
+		}
+	}
+}

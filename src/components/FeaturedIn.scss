@@ -1,0 +1,20 @@
+.FeaturedIn{
+	padding: 2em;
+	&__title{
+		text-align: center;
+	}
+	&__logos{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		max-width: 1300px;
+		margin: 0 auto;
+		& img{
+			margin-right: 2em;
+			margin-bottom: 2em;
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}

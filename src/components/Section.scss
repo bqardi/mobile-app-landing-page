@@ -1,0 +1,13 @@
+@import "../variables";
+
+.Section{
+	&--white{
+		background-color: $whiteColor;
+	}
+	&--gray{
+		background-color: $lightGrayColor;
+	}
+	&--brand{
+		background-color: $brandColor;
+	}
+}

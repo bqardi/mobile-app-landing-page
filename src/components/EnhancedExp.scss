@@ -1,0 +1,92 @@
+@import "../variables";
+
+.EnhancedExp{
+	&__background{
+		position: relative;
+		display: inline-block;
+		&::before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: linear-gradient(to top, transparent, white);
+		}
+	}
+	&__image{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 500px;
+		object-fit: cover;
+	}
+	&__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__cards{
+		position: relative;
+		width: 90%;
+		max-width: 335px;
+		height: 300px;
+		&Front{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		&Back{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	&__card{
+		&Content{
+			max-width: 100px;
+		}
+		&Logos{
+			$imgHeight: 56px;
+			position: relative;
+			width: $imgHeight * 1.68;
+			& img{
+				height: $imgHeight;
+			}
+			&Chelsea{
+				position: absolute;
+				right: 0;
+			}
+		}
+		&Time{
+			margin: 0;
+		}
+		&Versus{
+			color: $blackColor;
+			margin: 0.8em 0;
+		}
+		&Type{
+			color: $blackColor;
+			font-size: 0.9em;
+			margin: 0;
+		}
+	}
+	@media only screen and (min-width: $gridBreakpoint) {
+		&__image{
+			width: unset;
+		}
+		&__background{
+			max-width: 600px;
+		}
+		&__background::before{
+			background-image: linear-gradient(to right, transparent, white);
+		}
+	}
+}

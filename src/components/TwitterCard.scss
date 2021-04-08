@@ -1,0 +1,52 @@
+@import "../variables";
+
+.TwitterCard{
+	box-sizing: border-box;
+	min-height: clamp(190px, 50vw, 220px);
+	border: 1px solid #828282;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 2em;
+	background-color: $whiteColor;
+	@media only screen and (max-width: 720px) {
+		&{
+			margin: 0 16vw;
+			padding: 1.2em;
+		}
+	}
+	@media only screen and (max-width: 620px) {
+		&{
+			margin: 0 12vw;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		&{
+			margin: 0 8vw;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		&{
+			margin: 0;
+		}
+	}
+	&__heading{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__avatar{
+		border: 2px solid $brandColor;
+		border-radius: 50%;
+		margin-right: 1em;
+	}
+	&__name{
+		flex-grow: 1;
+		font-size: 1.2em;
+		margin: 0;
+		color: $blackColor;
+	}
+	&__comment{
+		max-width: 100%;
+		margin: 1em 0;
+	}
+}
